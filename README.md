@@ -21,6 +21,7 @@ element for which the function returns true, a single element.
 
 ```js
 [1,3,5,6,8].find( e => e % 2 === 0 )
+//=> 6
 ```
 
 **Note**: You could have multiple matches, but `find` returns _only the first
@@ -30,9 +31,9 @@ element_. This could lead to some bugs if you're not careful.
 let roommates = ["jess", "winston", "winston", "nick"];
 
 roommates.find( s => s === "winston" )
-// => winston
+//=> winston
 
-roommates.filter( s => "winston" )
+roommates.filter( s => s === "winston" )
 //=> [winston, winston]
 ```
 
@@ -66,7 +67,7 @@ Run the tests using `learn`.
 
 `Array.find()` is a built-in function in JavaScript which is used to get the
 value of the first element in the array that satisfies the provided condition.
-With this, you can quickly check all the elements of the array and returns the
+With this, you can quickly check all the elements of the array and return the
 first match.
 
 ## Resources

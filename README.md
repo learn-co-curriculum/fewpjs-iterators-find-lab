@@ -32,7 +32,7 @@ let roommates = ["jess", "winston", "winston", "nick"];
 roommates.find( s => s === "winston" )
 // => winston
 
-roommates.filter( s => "winston" )
+roommates.filter( s => s === "winston" )
 //=> [winston, winston]
 ```
 
